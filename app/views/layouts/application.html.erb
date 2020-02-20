@@ -4,7 +4,10 @@
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <!-- DW: Lines 8 and 9 add Bootstrap responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- DW: note that the JS scripts should be a the bottom of the file (for performance and only when the DOM is loaded), also you can create several packs and import them where you need them! -->
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
